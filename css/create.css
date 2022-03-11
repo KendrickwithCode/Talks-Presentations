@@ -1,0 +1,229 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eaeaea
+}
+
+li {
+
+    font-weight: 500;
+    font-size: 30px;
+    color: #eaeaea;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    width: 100%;
+    right: 0;
+    background-color: #4F6D7A;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 30px;
+    color: #eaeaea;
+
+}
+
+.input-group.searchbar{
+    width:30%;
+    left: 20px;
+    
+}
+
+.form-control.search{
+    background-color: transparent;
+    border-color: white;
+}
+
+/*Talks navbar text size*/
+.navbar-light .navbar-brand {
+    color: #eaeaea;
+    font-size: 30px;
+}
+.quantity-section{
+    position:relative;
+    top:4px;
+}
+
+.main {
+    font-family: "Montserrat", san-serif;
+}
+
+div.col-md-3 {
+    margin: auto;
+}
+
+.card {
+    animation: card_animation 1s cubic-bezier(0.470, 0.000, 0.745, 0.715);
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    border-color: #4F6D7A;
+    width: 70rem;
+}
+
+.top-card {
+    width: 100%;
+    height: auto;
+    padding-top: 2rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.card-body h6 {
+    padding-top: 5px;
+    position: relative;
+    left: 25px;
+}
+
+.card-spacing {
+    padding-top: 50px;
+}
+
+.btn {
+    background-color: #4F6D7A;
+}
+
+.presented {
+    position: relative;
+    left: 90px;
+    top: 20px;
+    text-align: center;
+}
+
+.status {
+    padding-left: 20px;
+}
+
+.topics {
+    padding-left: 20px;
+}
+
+.description {
+    padding-left: 20px;
+}
+
+.book_button {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.pricing {
+    position: relative;
+    top: 5%;
+    text-align: center;
+}
+
+#comment-id.form-control {
+    width: 60%;
+}
+
+#status-form.form-control {
+    width: 40%;
+}
+
+textarea.date-control {
+    width: 40%;
+}
+
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pt-5 {
+    padding-top: 5rem !important;
+}
+
+.col-lg-4.create-button{
+    top: 50px;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: 50rem;
+    }
+
+    img.booking-history {
+        width: 90%;
+        height: 90%;
+    }
+
+    .btn.btn-primary.btn-lg.btn-block {
+        height: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: 40rem;
+    }
+
+    img.booking-history {
+        width: 90%;
+        height: 90%;
+    }
+
+    .btn.btn-primary.btn-lg.btn-block {
+        height: 50%;
+    }
+
+    h5 {
+        position: relative;
+        left: 200px;
+        bottom: 30px;
+    }
+    .centered-col {
+    position:relative;
+    left: 30%;
+}
+}
+
+
+@keyframes card_animation {
+    0% {
+        transform: translateX(0) translateY(0);
+        box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    }
+
+    100% {
+        transform: translateX(8px) translateY(-8px);
+        box-shadow: -1px 1px #3e3e3e, -2px 2px #3e3e3e, -3px 3px #3e3e3e, -4px 4px #3e3e3e,
+            -5px 5px #3e3e3e, -6px 6px #3e3e3e, -7px 7px #3e3e3e, -8px 8px #3e3e3e;
+    }
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

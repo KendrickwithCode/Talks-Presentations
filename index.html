@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--Animate on Scroll CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <!--Logo image for top right-->
+                <img src="img/Logo-Design-Alt.png" alt="Talks Logo" width="80" height="60"
+                    class="d-inline-block-align-top" />
+                <a class="navbar-brand" href="index.html">Talks.</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="input-group searchbar">
+                        <input type="text" class="form-control search" placeholder="Search Presentations..."
+                            aria-label="Presentation Searchbar" aria-describedby="button-addon2">
+                        <!--SVG referenced: https://icons.getbootstrap.com/icons/search/-->
+                        <button class="btn btn-outline-light" type="button" id="button-addon2"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></button>
+                    </div>
+                    <!--Position of navbar navigation buttons-->
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#topic-button">Topics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="create.html">Create</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="booking.html">Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Jumbotron-->
+        <div class="jumbotron">
+            <div class="p-3 p-md-5 bg-light rounded-3">
+                <div class="container">
+                    <div class="row pt-5">
+                        <div class="col-4 col-xs-2">
+                            <img src="img/jumbotron-pic-2.png" alt="Presenter" class="rounded float-left" />
+                        </div>
+                        <div class="col-4 col-xs-8">
+                            <div class="presentation">
+                                <div class="container title">
+                                    <img src="img/presentation_screen.png" alt="Presentation Screen"
+                                        class="rounded mx-auto d-block" style="width:100%;" />
+                                    <div class="title-phrase">
+                                        <h2>Let's Hear It!</h2>
+                                        <img src="img/exclamation.png" alt="Talks Logo" width="50" height="60"
+                                            class="exclamation" />
+                                    </div>
+                                    <a type="button" href="#welcome-text" class="btn btn-primary btn-lg btn-block">Jump
+                                        in!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-xs-2">
+                            <img src="img/jumbotron-pic-1.png" alt="Crowd" class="rounded float-right" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <!--ROW 1-->
+        <div class="border">
+            <div class="container">
+                <div class="row">
+                    <!--COLUMN 1-->
+                    <div class="col-md-6">
+                        <div class="d-flex p-4 justify-content-center">
+                            <div class="top-card">
+                                <div class="card" data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="img/Placeholder.GIF" class="card-img-top" alt="Placeholder">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Your Presentation,<br>
+                                            Your idea,<br>
+                                            You express how you want.<br></h5>
+                                        <p class="card-text">Create a time and a place to share your ideas through
+                                            presentations.<br>
+                                            This is how presentations are viewed.
+                                        </p>
+                                        <a type="button" href="details.html"
+                                            class="btn btn-primary btn-lg btn-block">View
+                                            Details</a>
+                                        <h6>Upcoming</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--COLUMN 2-->
+                    <div class="col-md-6">
+                        <div id="welcome-text">
+
+                            <h3>Welcome to Talks!</h3>
+                            <p>It's in this community of Presenters and Presentations that you
+                                can share ideas and explore new ones. Below you can browse upcoming presentations,
+                                visible by a card box just like this one.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--COLUMN 3-->
+        <div id="topic-button">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Animals</a></li>
+                            <li><a class="dropdown-item" href="#">Sports</a></li>
+                            <li><a class="dropdown-item" href="#">Health</a></li>
+                            <li><a class="dropdown-item" href="#">Science & Technology</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Featured</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input type="text" class="form-control search" placeholder="Search Presentations..."
+                            aria-label="Presentation Searchbar" aria-describedby="button-addon2">
+                        <!--SVG referenced: https://icons.getbootstrap.com/icons/search/-->
+                        <button class="btn btn-outline-light" type="button" id="button-addon2"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <!--ROW 2-->
+        <div class="container">
+            <div class="row row-cols-3">
+                <div class="col-lg-6">
+                    <p>
+                    <h1>Featured Presentations</h1>
+                    </p>
+                    <div class="col-lg-3">
+                        <div class="col-lg-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--ROW 3-->
+        <div class="container">
+            <div class="row mx-md-n5">
+                <div class="col px-md-4 xs-4">
+                    <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="img/puppy.jpg" class="card-img-top" alt="Placeholder">
+                        <div class="card-body">
+                            <h5 class="card-title">A Presentation on Puppies!</h5>
+                            <p class="card-text">In this presentation we will explore the origin of our furry friends,
+                                and how they
+                                became our best friends.
+                            </p>
+                            <a type="button" href="details.html" class="btn btn-primary btn-lg btn-block">View
+                                Details</a>
+                            <h6>Upcoming</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-md-4 xs-4">
+                    <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="img/Placeholder.GIF" class="card-img-top" alt="Placeholder">
+                        <div class="card-body">
+                            <h5 class="card-title">Presentation Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sit
+                                officiis consectetur quia in! Error recusandae accusantium nam vero?</p>
+                            <a type="button" href="details.html" class="btn btn-primary btn-lg btn-block">View
+                                Details</a>
+                            <h6>Upcoming</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-md-4 xs-4">
+                    <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="img/Placeholder.GIF" class="card-img-top" alt="Placeholder">
+                        <div class="card-body">
+                            <h5 class="card-title">Presentation Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sit
+                                officiis consectetur quia in! Error recusandae accusantium nam vero?</p>
+                            <a type="button" href="details.html" class="btn btn-primary btn-lg btn-block">View
+                                Details</a>
+                            <h6>Upcoming</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-md-4 xs-4">
+                    <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="img/Placeholder.GIF" class="card-img-top" alt="Placeholder">
+                        <div class="card-body">
+                            <h5 class="card-title">Presentation Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sit
+                                officiis consectetur quia in! Error recusandae accusantium nam vero?</p>
+                            <a type="button" href="details.html" class="btn btn-primary btn-lg btn-block">View
+                                Details</a>
+                            <h6>Upcoming</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-md-4 xs-4">
+                    <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="img/Placeholder.GIF" class="card-img-top" alt="Placeholder">
+                        <div class="card-body">
+                            <h5 class="card-title">Presentation Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sit
+                                officiis consectetur quia in! Error recusandae accusantium nam vero?</p>
+                            <a type="button" href="details.html" class="btn btn-primary btn-lg btn-block">View
+                                Details</a>
+                            <h6>Upcoming</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-md-4 xs-4">
+                    <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="img/Placeholder.GIF" class="card-img-top" alt="Placeholder">
+                        <div class="card-body">
+                            <h5 class="card-title">Presentation Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sit
+                                officiis consectetur quia in! Error recusandae accusantium nam vero?</p>
+                            <a type="button" href="details.html" class="btn btn-primary btn-lg btn-block">View
+                                Details</a>
+                            <h6>Upcoming</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-md-4 xs-4">
+                    <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="img/Placeholder.GIF" class="card-img-top" alt="Placeholder">
+                        <div class="card-body">
+                            <h5 class="card-title">Presentation Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sit
+                                officiis consectetur quia in! Error recusandae accusantium nam vero?</p>
+                            <a type="button" href="details.html" class="btn btn-primary btn-lg btn-block">View
+                                Details</a>
+                            <h6>Upcoming</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-md-4 xs-4">
+                    <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="img/Placeholder.GIF" class="card-img-top" alt="Placeholder">
+                        <div class="card-body">
+                            <h5 class="card-title">Presentation Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sit
+                                officiis consectetur quia in! Error recusandae accusantium nam vero?</p>
+                            <a type="button" href="details.html" class="btn btn-primary btn-lg btn-block">View
+                                Details</a>
+                            <h6>Upcoming</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-md-4 xs-4">
+                    <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="img/Placeholder.GIF" class="card-img-top" alt="Placeholder">
+                        <div class="card-body">
+                            <h5 class="card-title">Presentation Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sit
+                                officiis consectetur quia in! Error recusandae accusantium nam vero?</p>
+                            <a type="button" href="details.html" class="btn btn-primary btn-lg btn-block">View
+                                Details</a>
+                            <h6>Upcoming</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Animate on Scroll library-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

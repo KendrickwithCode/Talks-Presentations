@@ -1,0 +1,156 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eaeaea
+}
+
+li {
+    font-weight: 500;
+    font-size: 30px;
+    color: #eaeaea;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 30px;
+    color: #eaeaea;
+}
+
+.input-group.searchbar{
+    width:30%;
+    left: 20px;
+    
+}
+
+.form-control.search{
+    background-color: transparent;
+    border-color: white;
+}
+
+/*Talks navbar text size*/
+.navbar-light .navbar-brand {
+    color: #eaeaea;
+    font-size: 30px;
+}
+
+.navbar {
+    background-color: #4F6D7A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    width: 100%;
+    right: 0;
+}
+
+div.col-md-3 {
+    margin: auto;
+}
+
+.display-5 h1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -400px;
+    right: -10px;
+    font-size: 40px !important;
+    animation-delay: 3s;
+}
+
+.card {
+    animation: card_animation 1s cubic-bezier(0.470, 0.000, 0.745, 0.715);
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    border-color: #4F6D7A;
+    width: 70rem;
+}
+
+.card-body h6 {
+    padding-top: 5px;
+    position: relative;
+    left: 25px;
+
+}
+
+.pt-5{
+    padding-top: 7rem !important;
+}
+
+.card-spacing {
+    padding-top: 50px;
+}
+
+.btn-primary {
+    background-color: #4F6D7A;
+    border-color: #4F6D7A
+}
+
+a.btn.btn-primary.btn-lg.btn-block {
+    top: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: 50rem;
+    }
+
+    img.booking-history {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: 40rem;
+    }
+
+    img.booking-history {
+        width: 90%;
+        height: 90%;
+    }
+
+}
+
+
+@keyframes card_animation {
+    0% {
+        transform: translateX(0) translateY(0);
+        box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    }
+
+    100% {
+        transform: translateX(8px) translateY(-8px);
+        box-shadow: -1px 1px #3e3e3e, -2px 2px #3e3e3e, -3px 3px #3e3e3e, -4px 4px #3e3e3e,
+            -5px 5px #3e3e3e, -6px 6px #3e3e3e, -7px 7px #3e3e3e, -8px 8px #3e3e3e;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
