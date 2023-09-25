@@ -4,18 +4,18 @@ body {
 
 li {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 20px;
     color: #eaeaea;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    font-size: 30px;
+    font-size: 20px;
     color: #eaeaea;
 }
 
 .input-group.searchbar{
     width:30%;
-    left: 20px;
+    left: 325px;
     
 }
 
@@ -28,6 +28,7 @@ li {
 .navbar-light .navbar-brand {
     color: #eaeaea;
     font-size: 30px;
+    padding-left: 10px;
 }
 
 .navbar {
@@ -88,7 +89,16 @@ img.rounded.float-right {
     text-align: center;
 }
 
+.bottom-card-details h6{
+    padding-top:5px;
+    position:relative;
+    left:25px;
+}
+
 .card {
+    height: 480px;
+    max-height: 480px;
+    overflow-y: auto;
     animation: card_animation 1s cubic-bezier(0.470, 0.000, 0.745, 0.715);
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
@@ -105,6 +115,10 @@ img.rounded.float-right {
 .card-body h6 {
     padding-top: 5px;
     left: 25px;
+}
+
+.card-body{
+    max-height:280px;
 }
 
 .card-spacing {
@@ -133,12 +147,6 @@ img.rounded.float-right {
 .container.title {
     position: relative;
     text-align: center;
-}
-
-.card-body h6{
-    padding-top:5px;
-    position:relative;
-    left:25px;
 }
 
 #welcome-text {
